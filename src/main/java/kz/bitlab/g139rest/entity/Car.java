@@ -22,7 +22,7 @@ public class Car {
     @Column(name = "BRAND")
     private String brand;
 
-    @Column(name = "MODEL")
+    @Column(name = "MODEL", unique = true)
     private String model;
 
     @Column(name = "PRICE")
