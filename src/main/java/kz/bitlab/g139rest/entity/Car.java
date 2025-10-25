@@ -30,4 +30,8 @@ public class Car {
 
     @Column(name = "VOLUME")
     private Double volume;
+
+    @JoinColumn(name = "COUNTRY_ID")
+    @ManyToOne
+    private Country country;
 }
