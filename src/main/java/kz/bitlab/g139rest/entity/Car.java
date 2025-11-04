@@ -19,8 +19,9 @@ public class Car {
     @Column(name = "ID")
     private Long id;
 
-    @Column(name = "BRAND")
-    private String brand;
+    @JoinColumn(name = "BRAND_ID")
+    @ManyToOne
+    private Brand brand;
 
     @Column(name = "MODEL", unique = true)
     private String model;
